@@ -7,6 +7,7 @@ def islower(c):
 
 
 def uppercase(str):
+    result = ""
     for c in str:
         if islower(c):
             result += chr(ord(c) - ord('a') + ord('A'))
