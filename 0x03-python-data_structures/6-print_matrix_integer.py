@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
         print("Error: The matrix is empty.")
-        return
+        return None
 
     for row in matrix:
         for i, num in enumerate(row):
