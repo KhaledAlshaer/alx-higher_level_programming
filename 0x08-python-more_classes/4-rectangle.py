@@ -2,6 +2,8 @@
 """
 Define the Rectangle class
 """
+
+
 class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize the Rectangle object with optional width and height."""
@@ -57,6 +59,7 @@ class Rectangle:
     def __repr__(self):
         """Return a string representation that can recreate the object."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
 
 if __name__ == "__main__":
     # Example usage and testing
