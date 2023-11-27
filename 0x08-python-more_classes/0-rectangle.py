@@ -2,6 +2,8 @@
 """
 Defining an empthy class
 """
+
+
 class Rectangle:
     """empthy class"""
     pass
