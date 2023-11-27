@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""
+Define the Rectangle class
+"""
 
-# Define the Rectangle class
+
 class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize the Rectangle object with optional width and height."""
@@ -61,10 +64,13 @@ class Rectangle:
         """Print a message when an instance of Rectangle is deleted."""
         print("Bye rectangle...")
 
+
 if __name__ == "__main__":
     # Example usage and testing
     my_rectangle = Rectangle(2, 4)
-    print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+    print("Area: {} - Perimeter: {}".format(
+        my_rectangle.area(), my_rectangle.perimeter()
+    ))
 
     # Delete the instance and print a message
     del my_rectangle
