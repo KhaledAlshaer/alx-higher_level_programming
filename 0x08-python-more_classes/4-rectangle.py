@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-# Define the Rectangle class
+"""
+Define the Rectangle class
+"""
 class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize the Rectangle object with optional width and height."""
