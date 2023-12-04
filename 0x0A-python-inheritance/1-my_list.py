@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module"""
+"""Mylist module"""
 
 
 def MyList(list):
