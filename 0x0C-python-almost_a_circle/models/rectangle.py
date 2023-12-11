@@ -19,7 +19,7 @@ class Rectangle(Base):
             """returns the width"""
             return self.__width
 
-        def width (self, val):
+        def width(self, val):
             """sets width value"""
             if val != int:
                 raise TypeError("width must be an integer")
@@ -68,5 +68,4 @@ class Rectangle(Base):
                 return self.width * self.height
 
             def display(self):
-                """prints in stdout the Rectangle instance with the character #"""
-
+                """prints in stdout the Rectangle instance with #"""
