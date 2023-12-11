@@ -85,3 +85,12 @@ class Rectangle(Base):
     def __str__(self):
         """returns a string representation of the object"""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """assigns arguments to attributes in a specific order"""
+        if args:
+            attr_names = ["id", "width", "height", "x", "y"]
+            for attr, value in zip(attr_names, args):
+                setattr(self, f"_{Rectangle__{attr}}", value)
+
+
