@@ -68,7 +68,7 @@ class Rectangle(Base):
         if not isinstance(val, int):
             raise TypeError("y must be an integer")
         if val < 0:
-            raise ValueError("x must be >= 0")
+            raise ValueError("y must be >= 0")
         self.__y = val
 
     def area(self):
@@ -89,7 +89,7 @@ class Rectangle(Base):
             f"[Rectangle]({self.id}) "
             f"{self.x}/{self.y} - "
             f"{self.width}/{self.height}"
-        )
+            )
 
     def update(self, *args, **kwargs):
         """assigns arguments to attributes with key-worded arguments support"""
