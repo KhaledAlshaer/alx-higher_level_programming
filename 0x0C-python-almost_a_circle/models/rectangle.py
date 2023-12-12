@@ -89,7 +89,7 @@ class Rectangle(Base):
                 f"{self.x}/{self.y} - "
                 f"{self.width}/{self.height}")
 
-    def update(self, *args, **kwargs):
+    def update(self.id, *args, **kwargs):
         """assigns arguments to attributes with key-worded arguments support"""
         attr_names = ["id", "width", "height", "x", "y"]
 
