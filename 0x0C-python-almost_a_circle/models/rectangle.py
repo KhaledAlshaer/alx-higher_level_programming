@@ -87,7 +87,8 @@ class Rectangle(Base):
         """returns a string representation of the object"""
         return (
             f"[Rectangle]({self.id}) "
-            f"{self.x}/{self.y} - {self.width}/{self.height}"
+            f"{self.x}/{self.y} - "
+            f"{self.width}/{self.height}"
         )
 
     def update(self, *args, **kwargs):
