@@ -85,11 +85,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns a string representation of the object"""
-        return (
-            f"[Rectangle]({self.id}) "
-            f"{self.x}/{self.y} - "
-            f"{self.width}/{self.height}"
-            )
+        return (f"[Rectangle]({self.id}) "
+                f"{self.x}/{self.y} - "
+                f"{self.width}/{self.height}")
 
     def update(self, *args, **kwargs):
         """assigns arguments to attributes with key-worded arguments support"""
@@ -102,38 +100,3 @@ class Rectangle(Base):
         if kwargs:
             for key, value in kwargs.items():
                 setattr(self, f"_{key}", value)
-
-
-
-if __name__ == "__main__":
-    # Test instantiation with non-integer width
-    try:
-        rectangle = Rectangle("string", 5)
-    except TypeError as e:
-        print(f"Error: {e}")
-
-    # Test instantiation with width <= 0
-    try:
-        rectangle = Rectangle(0, 5)
-    except ValueError as e:
-        print(f"Error: {e}")
-
-    # Test instantiation with correct values
-    rectangle = Rectangle(10, 5)
-    print(rectangle)
-
-    # Test width setter with non-integer value
-    try:
-        rectangle.width = "string"
-    except TypeError as e:
-        print(f"Error: {e}")
-
-    # Test width setter with value <= 0
-    try:
-        rectangle.width = 0
-    except ValueError as e:
-        print(f"Error: {e}")
-
-    # Test width setter with valid value
-    rectangle.width = 8
-    print(rectangle)
