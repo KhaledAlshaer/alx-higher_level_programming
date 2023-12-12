@@ -76,7 +76,8 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """prints in stdout the Rectangle instance with # and accounting for x and y"""
+        """prints in stdout the Rectangle
+        instance with # and accounting for x and y"""
         for _ in range(self.y):
             print()
         for _ in range(self.height):
@@ -84,7 +85,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns a string representation of the object"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle]({self.id})
+        {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """assigns arguments to attributes with key-worded arguments support"""
@@ -92,8 +94,8 @@ class Rectangle(Base):
 
         if args:
             for attr, value in zip(attr_names, args):
-                setattr(self, f"_{Rectangle__{attr}}", value)
+                setattr(self, f"_{attr}", value)
 
         if kwargs:
             for key, value in kwargs.items():
-                setattr(self, f"_{Rectangle__{key}}", value)
+                setattr(self, f"_{key}", value)
