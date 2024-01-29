@@ -2,4 +2,4 @@
 
 -- INSERT NEW ROW
 INSERT INTO (id, name)
-	VALUES ("89", "Best School");
+VALUES (89, "Best School");
