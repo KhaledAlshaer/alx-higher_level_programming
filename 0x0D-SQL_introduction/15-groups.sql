@@ -3,5 +3,5 @@
 -- GROUP
 SELECT score, COUNT(*) AS number
 FROM second_table
-ORDER BY score
+GROUP BY score
 ORDER BY number DESC;
