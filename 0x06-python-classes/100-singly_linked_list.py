@@ -34,7 +34,7 @@ class Node:
         returns:
             None
         """
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("data must be an integer")
         self.__data = value
 
